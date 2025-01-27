@@ -4,38 +4,25 @@ Esta é uma package Laravel para integração com a API de cotação de fretes d
 
 ## Instalação
 
-1. Adicione o repositório ao seu `composer.json`:
-
-```json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/brew-apps/intelipost"
-        }
-    ]
-}
-```
-
-2. Instale via Composer:
+1. Instale via Composer:
 
 ```bash
 composer require brew/intelipost
 ```
 
-3. Publique os arquivos de configuração e migrations:
+2. Publique os arquivos de configuração e migrations:
 
 ```bash
 php artisan vendor:publish --provider="Brew\Intelipost\Providers\IntelipostServiceProvider"
 ```
 
-4. Execute as migrations:
+3. Execute as migrations:
 
 ```bash
 php artisan migrate
 ```
 
-5. Configure suas credenciais no arquivo `.env`:
+4. Configure suas credenciais no arquivo `.env`:
 
 ```env
 INTELIPOST_API_KEY=sua-chave-api
