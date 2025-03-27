@@ -134,7 +134,7 @@ vendor/bin/pest
 ## Requisitos
 
 - PHP 8.2 ou superior
-- Laravel 11.0
+- Laravel >=11.0
 
 ## Contribuindo
 
