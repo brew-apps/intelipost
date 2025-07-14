@@ -16,7 +16,7 @@ readonly class VolumeData
     public function toArray(): array
     {
         return [
-            'weight' => $this->weight / 1000,
+            'weight' => $this->weight,
             'volume_type' => $this->volume_type,
             'cost_of_goods' => $this->cost_of_goods,
             'width' => $this->width,
