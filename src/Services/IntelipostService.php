@@ -41,6 +41,7 @@ class IntelipostService implements IntelipostQuoteInterface
                 'Accept' => 'application/json',
                 'Content-Type' => 'application/json',
                 'api-key' => $this->apiKey,
+                'platform' => $quoteData->additional_information->sales_channel ?? 'default',
             ])->post("{$this->apiUrl}/quote", $requestData);
 
             $executionTime = microtime(true) - $startTime;
